@@ -3,9 +3,8 @@ import { isMobileTerminal } from './utils/flexibles'
 </script>
 
 <template>
-  <div>
-    {{ isMobileTerminal }}
-  </div>
+  <!-- 一级路由出口 -->
+  <routerView />
 </template>
 
 <style scoped>
