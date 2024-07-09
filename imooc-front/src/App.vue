@@ -1,17 +1,11 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import { isMobileTerminal } from './utils/flexibles'
 </script>
 
 <template>
   <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="bg-slate-900 text-center" alt="Vue logo" />
-    </a>
+    {{ isMobileTerminal }}
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
